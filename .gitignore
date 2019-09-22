@@ -2,5 +2,5 @@
 .vscode
 .classpath
 .project
-/target
+target/
 
