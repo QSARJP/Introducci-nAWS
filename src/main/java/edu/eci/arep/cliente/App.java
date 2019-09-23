@@ -10,12 +10,13 @@ import java.util.List;
  */
 public class App 
 {
-    public static int clientes = 20;
+    public static int clientes = 10;
+    public static URL url;
 
      
     public static void main(String[] args) throws Exception { 
         //https://salty-river-29279.herokuapp.com/
-        URL url = new URL("https://es.pons.com/traducci%C3%B3n"); 
+        url = new URL("https://salty-river-29279.herokuapp.com/"); 
         List<Thread> threads = new ArrayList<>();
         for (int i=0;i<clientes;i++){
             threads.add(new ThreadApp(url));
@@ -23,9 +24,11 @@ public class App
         for (Thread i: threads){
             i.start();
         }
+        
         for (Thread i: threads){
             i.join();
         }
+        
         
       }
      
