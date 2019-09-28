@@ -38,10 +38,10 @@ debe proveer un framework IoC para la construcción de aplicaciones a partir de 
 ![](img/modeloDespliegue.PNG)
 
 ### Arquitectura AWS
-![](img/modeloAWS.PNG)
+![](img/modeloAWS.png)
 
 ### modelo Cliente
-![](img/Cliente.PNG)
+![](img/cliente.png)
 
 ## Compile and run instructions
 
